@@ -42,7 +42,7 @@
         border: 1px solid #ccc;
         background-color: #f1f1f1;
         width: 30%;
-        height: 300px;
+       
         }
 
         /* Style the buttons that are used to open the tab content */
@@ -50,7 +50,7 @@
         display: block;
         background-color: inherit;
         color: black;
-        padding: 22px 16px;
+        padding: 15px 13px;
         width: 100%;
         border: none;
         outline: none;
@@ -75,9 +75,38 @@
         padding: 0px 12px;
         border: 1px solid #ccc;
         width: 70%;
-        border-left: none;
-        height: 300px;
+        border-left: none;      
+        background-color: white;        
+        overflow-y:hidden;
+        height:auto;
+        display:block;
+        
         }
+        
+        /* custom CSS by yeamin*/
+        .tabcontent-details{
+            margin-top: 20px;
+        }
+
+        .tab-row{
+            padding: 10px;           
+        }
+        
+        .tabcontent-trash{
+            background-color: #D3D0CF;
+            color: black;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .tab{
+            background-color: #E5E5E5;
+            border: none;
+        }
+
+        
+        
+        
     </style>
 
 </head>
@@ -489,28 +518,284 @@
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="tab">
-                                    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                                    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                                  </div>
-                                  
-                                  <div id="London" class="tabcontent">
-                                    <h3>London</h3>
-                                    <p>London is the capital city of England.</p>
-                                  </div>
-                                  
-                                  <div id="Paris" class="tabcontent">
-                                    <h3>Paris</h3>
-                                    <p>Paris is the capital of France.</p>
-                                  </div>
-                                  
-                                  <div id="Tokyo" class="tabcontent">
-                                    <h3>Tokyo</h3>
-                                    <p>Tokyo is the capital of Japan.</p>
-                                  </div>
+                        <div class="row ">
+                            <div class="col-lg-12 ">
+                                <div class="tab-section">
+                                    <div class="tab">
+                                        <button class="tablinks active" onclick="openTab(event, 'Work_Experience')">Work Experience</button>
+                                        <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+                                    </div>
+
+                                    <div id="Work_Experience" class="tabcontent" >
+                                        <div class="tabcontent-details">                                        
+                                          <div class="tabcontent-row">
+                                              <div class="col-lg-12 col-md-6">
+                                                  
+                                                  <div class="row tab-row">
+                                                      <div class="col-1 col-md-1">
+                                                          <a>
+                                                              <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                          </a>
+                                                      </div>
+                                                      <div class="col-8 col-md-8">
+                                                          <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                          <p style="font-size: 10px;">
+                                                              January 1, 2006 to present                                                             
+                                                          </p>
+                                                      </div>
+  
+                                                      <div class="col-3 col-md-1">
+                                                          <a href="">
+                                                              <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                          </a>
+                                                      </div>
+                                                  </div>
+
+                                                  <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                              
+                                              </div>  
+                                          </div>
+                                        </div>                                    
+                                    </div> 
+
+                                    <div id="Education" class="tabcontent" >
+                                        <div class="tabcontent-details">                                        
+                                          <div class="tabcontent-row">
+                                              <div class="col-lg-12 col-md-6">
+                                                  
+                                                  <div class="row tab-row">
+                                                      <div class="col-1 col-md-1">
+                                                          <a>
+                                                              <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                          </a>
+                                                      </div>
+                                                      <div class="col-8 col-md-8">
+                                                          <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                          <p style="font-size: 10px;">
+                                                              January 1, 2006 to present                                                             
+                                                          </p>
+                                                      </div>
+  
+                                                      <div class="col-3 col-md-1">
+                                                          <a href="">
+                                                              <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                          </a>
+                                                      </div>
+                                                  </div>
+
+                                                  <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-row">
+                                                    <div class="col-1 col-md-1">
+                                                        <a>
+                                                            <i class="fa fa-briefcase" style="font-size: 20px;"></i> 
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 col-md-8">
+                                                        <p>NoT yEt wOrKiNg i Am sTilL a StUdEnT</p>
+                                                        <p style="font-size: 10px;">
+                                                            January 1, 2006 to present                                                             
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-3 col-md-1">
+                                                        <a href="">
+                                                            <i class="fa fa-trash tabcontent-trash"></i>                                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                              </div>  
+                                          </div>
+                                        </div>                                    
+                                    </div> 
+                                </div>
                             </div>
                             
                         </div>
@@ -554,7 +839,7 @@
     <!-- Main JS-->
     <script src="js/main.js"></script>
     <script>
-        function openCity(evt, cityName) {
+        function openTab(evt, tabName) {
         // Declare all variables
         var i, tabcontent, tablinks;
 
@@ -571,7 +856,7 @@
         }
 
         // Show the current tab, and add an "active" class to the link that opened the tab
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
         }
     </script>
